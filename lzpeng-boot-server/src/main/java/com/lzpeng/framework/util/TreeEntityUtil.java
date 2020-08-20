@@ -192,6 +192,7 @@ public class TreeEntityUtil {
             for (Entity child : parent.getChildren()) {
                 // 入队
                 queue.offer(child);
+                result.add(child);
             }
         }
         return result;
